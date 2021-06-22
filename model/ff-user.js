@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const User = mongoose.model('FfUser', {
+const FfUser = mongoose.model('FfUser', {
     namaTur: {
         type: String,
         require: true,
@@ -149,4 +149,4 @@ const User = mongoose.model('FfUser', {
     }
 })
 
-module.exports = User
+module.exports = FfUser

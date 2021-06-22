@@ -6,7 +6,7 @@ const cookieParser = require('cookie-parser')
 const flash = require('connect-flash')
 
 require('./utils/db')
-const User = require('./model/user')
+const FfUser = require('./model/ff-user')
 
 const app = express()
 const port = 3000
@@ -186,7 +186,7 @@ app.post('/ff-register', (req, res) => {
         }
     }
 
-    User.insertMany(user, (err, result) => {
+    FfUser.insertMany(user, (err, result) => {
         req.flash('msg', 'Turnamen Berhasil dibuat! Silakan Login')
         res.redirect('/ff-login')
     })
@@ -204,7 +204,7 @@ app.post('/ff-form', async (req, res) =>{
     let email =  req.body.email
     let password = req.body.password
 
-    const user = await User.findOne({namaTur: namaTur, email: email, password: password})
+    const user = await FfUser.findOne({namaTur: namaTur, email: email, password: password})
 
     if(user == null){
         res.render('ff-login-gagal', {
@@ -505,9 +505,9 @@ app.post('/ff-edit', (req, res) => {
                 },
             }
         }
-        await User.findOneAndUpdate({ _id: _id }, user, { new: true }, async (err, doc) => {
+        await FfUser.findOneAndUpdate({ _id: _id }, user, { new: true }, async (err, doc) => {
             if(!err) {
-                const user = await User.findOne({ _id: _id })
+                const user = await FfUser.findOne({ _id: _id })
 
                 res.render('ff-form', {
                     layout: 'layouts/main-layout',
@@ -525,7 +525,7 @@ app.post('/ff-edit', (req, res) => {
 })
 
 app.get('/ff-hasil/:_id', async (req, res) =>{
-    const user = await User.findOne({_id: req.params._id})
+    const user = await FfUser.findOne({_id: req.params._id})
 
     res.render('ff-hasil', {
         layout: 'layouts/main-layout',
