@@ -534,6 +534,15 @@ app.get('/ff-hasil/:_id', async (req, res) =>{
     })
 })
 
+
+
+app.get('/pubg-register', (req, res) =>{
+    res.render('pubg-register', {
+        layout: 'layouts/main-layout',
+        title: 'Fradotech',
+    })
+})
+
 app.listen(port, () =>{
     console.log(`Point Count App | Listening at http://127.0.0.1:${port}`)
 })
