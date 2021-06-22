@@ -8,7 +8,7 @@
   <a>Tips: Gunakan deskop mode agar tampilan tabel rapi</a>
   <a>M1R (Match 1 Rank)</a>
   <p>M1K (Match 1 Kill)</p>
-  <form method="post" action="/ff-form?_method=PUT">
+  <form method="post" action="/ff-edit">
     <input type="hidden" id="_id" name="_id" value="<%= user._id %>">
     <input type="hidden" id="namaTur" name="namaTur" value="<%= user.namaTur %>">
     <input type="hidden" id="email" name="email" value="<%= user.email %>">
@@ -167,10 +167,10 @@
                 <td><input type="name" class="form-control" id="namaTim12" name="namaTim12" value="<%= user.data.tim12.namaTim %>"></td>
                 <td><input class="form-control" id="m1r12" name="m1r12" value="<%= user.data.tim12.m1r %>"></td>
                 <td><input class="form-control" id="m1k12" name="m1k12" value="<%= user.data.tim12.m1k %>"></td>
-                <td><input class="form-control" id="m2r12" name="m1r12" value="<%= user.data.tim12.m2r %>"></td>
-                <td><input class="form-control" id="m2k12" name="m1k12" value="<%= user.data.tim12.m2k %>"></td>
-                <td><input class="form-control" id="m3r12" name="m1r12" value="<%= user.data.tim12.m3r %>"></td>    
-                <td><input class="form-control" id="m3k12" name="m1k12" value="<%= user.data.tim12.m3k %>"></td>
+                <td><input class="form-control" id="m2r12" name="m2r12" value="<%= user.data.tim12.m2r %>"></td>
+                <td><input class="form-control" id="m2k12" name="m2k12" value="<%= user.data.tim12.m2k %>"></td>
+                <td><input class="form-control" id="m3r12" name="m3r12" value="<%= user.data.tim12.m3r %>"></td>    
+                <td><input class="form-control" id="m3k12" name="m3k12" value="<%= user.data.tim12.m3k %>"></td>
                 <td><%= user.data.tim12.total %> </td>
                 <td><%= user.data.tim12.rank %> </td>
               </tr>

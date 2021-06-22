@@ -220,7 +220,7 @@ app.post('/ff-form', async (req, res) =>{
     }
 })
 
-app.put('/ff-form', (req, res) => {
+app.post('/ff-edit', (req, res) => {
     let _id = req.body._id
     let namaTur = req.body.namaTur
     let email =  req.body.email
@@ -351,7 +351,6 @@ app.put('/ff-form', (req, res) => {
     async function finalRank(arrayRank){
         arrayRank.sort((a, b) => a - b)
         arrayRank.reverse()
-        console.log(arrayRank)
     
         let rank1 = arrayRank.indexOf(total1) + 1
         let rank2 = arrayRank.indexOf(total2) + 1
@@ -365,153 +364,160 @@ app.put('/ff-form', (req, res) => {
         let rank10 = arrayRank.indexOf(total10) + 1
         let rank11 = arrayRank.indexOf(total11) + 1
         let rank12 = arrayRank.indexOf(total12) + 1
-
-        User.findOneAndUpdate(
-            { _id: _id },
-            {
-                $set: 
-                {
-                    namaTur: namaTur,
-                    email: email,
-                    password: password,
-                    data: {
-                        tim1: {
-                            namaTim: namaTim1,
-                            m1r: req.body.m1r1,
-                            m1k: req.body.m1k1,
-                            m2r: req.body.m2r1,
-                            m2k: req.body.m2k1,
-                            m3r: req.body.m3r1,
-                            m3k: req.body.m3k1,
-                            total: total1,
-                            rank: rank1,
-                        },
-                        tim2: {
-                            namaTim: namaTim2,
-                            m1r: req.body.m1r2,
-                            m1k: req.body.m1k2,
-                            m2r: req.body.m2r2,
-                            m2k: req.body.m2k2,
-                            m3r: req.body.m3r2,
-                            m3k: req.body.m3k2,
-                            total: total2,
-                            rank: rank2,
-                        },
-                        tim3: {
-                            namaTim: namaTim3,
-                            m1r: req.body.m1r3,
-                            m1k: req.body.m1k3,
-                            m2r: req.body.m2r3,
-                            m2k: req.body.m2k3,
-                            m3r: req.body.m3r3,
-                            m3k: req.body.m3k3,
-                            total: total3,
-                            rank: rank3,
-                        },
-                        tim4: {
-                            namaTim: namaTim4,
-                            m1r: req.body.m1r4,
-                            m1k: req.body.m1k4,
-                            m2r: req.body.m2r4,
-                            m2k: req.body.m2k4,
-                            m3r: req.body.m3r4,
-                            m3k: req.body.m3k4,
-                            total: total4,
-                            rank: rank4,
-                        },
-                        tim5: {
-                            namaTim: namaTim5,
-                            m1r: req.body.m1r5,
-                            m1k: req.body.m1k5,
-                            m2r: req.body.m2r5,
-                            m2k: req.body.m2k5,
-                            m3r: req.body.m3r5,
-                            m3k: req.body.m3k5,
-                            total: total5,
-                            rank: rank5,
-                        },
-                        tim6: {
-                            namaTim: namaTim6,
-                            m1r: req.body.m1r6,
-                            m1k: req.body.m1k6,
-                            m2r: req.body.m2r6,
-                            m2k: req.body.m2k6,
-                            m3r: req.body.m3r6,
-                            m3k: req.body.m3k6,
-                            total: total6,
-                            rank: rank6,
-                        },
-                        tim7: {
-                            namaTim: namaTim7,
-                            m1r: req.body.m1r7,
-                            m1k: req.body.m1k7,
-                            m2r: req.body.m2r7,
-                            m2k: req.body.m2k7,
-                            m3r: req.body.m3r7,
-                            m3k: req.body.m3k7,
-                            total: total7,
-                            rank: rank7,
-                        },
-                        tim8: {
-                            namaTim: namaTim8,
-                            m1r: req.body.m1r8,
-                            m1k: req.body.m1k8,
-                            m2r: req.body.m2r8,
-                            m2k: req.body.m2k8,
-                            m3r: req.body.m3r8,
-                            m3k: req.body.m3k8,
-                            total: total8,
-                            rank: rank8,
-                        },
-                        tim9: {
-                            namaTim: namaTim9,
-                            m1r: req.body.m1r9,
-                            m1k: req.body.m1k9,
-                            m2r: req.body.m2r9,
-                            m2k: req.body.m2k9,
-                            m3r: req.body.m3r9,
-                            m3k: req.body.m3k9,
-                            total: total9,
-                            rank: rank9,
-                        },
-                        tim10: {
-                            namaTim: namaTim10,
-                            m1r: req.body.m1r10,
-                            m1k: req.body.m1k10,
-                            m2r: req.body.m2r10,
-                            m2k: req.body.m2k10,
-                            m3r: req.body.m3r10,
-                            m3k: req.body.m3k10,
-                            total: total10,
-                            rank: rank10,
-                        },
-                        tim11: {
-                            namaTim: namaTim11,
-                            m1r: req.body.m1r11,
-                            m1k: req.body.m1k11,
-                            m2r: req.body.m2r11,
-                            m2k: req.body.m2k11,
-                            m3r: req.body.m3r11,
-                            m3k: req.body.m3k11,
-                            total: total11,
-                            rank: rank11,
-                        },
-                        tim12: {
-                            namaTim: namaTim12,
-                            m1r: req.body.m1r12,
-                            m1k: req.body.m1k12,
-                            m2r: req.body.m2r12,
-                            m2k: req.body.m2k12,
-                            m3r: req.body.m3r12,
-                            m3k: req.body.m3k12,
-                            total: total12,
-                            rank: rank12,
-                        },
-                    }
-                }
+        
+        let user = 
+        {
+            namaTur: namaTur,
+            email: email,
+            password: password,
+            data: {
+                tim1: {
+                    namaTim: namaTim1,
+                    m1r: req.body.m1r1,
+                    m1k: req.body.m1k1,
+                    m2r: req.body.m2r1,
+                    m2k: req.body.m2k1,
+                    m3r: req.body.m3r1,
+                    m3k: req.body.m3k1,
+                    total: total1,
+                    rank: rank1,
+                },
+                tim2: {
+                    namaTim: namaTim2,
+                    m1r: req.body.m1r2,
+                    m1k: req.body.m1k2,
+                    m2r: req.body.m2r2,
+                    m2k: req.body.m2k2,
+                    m3r: req.body.m3r2,
+                    m3k: req.body.m3k2,
+                    total: total2,
+                    rank: rank2,
+                },
+                tim3: {
+                    namaTim: namaTim3,
+                    m1r: req.body.m1r3,
+                    m1k: req.body.m1k3,
+                    m2r: req.body.m2r3,
+                    m2k: req.body.m2k3,
+                    m3r: req.body.m3r3,
+                    m3k: req.body.m3k3,
+                    total: total3,
+                    rank: rank3,
+                },
+                tim4: {
+                    namaTim: namaTim4,
+                    m1r: req.body.m1r4,
+                    m1k: req.body.m1k4,
+                    m2r: req.body.m2r4,
+                    m2k: req.body.m2k4,
+                    m3r: req.body.m3r4,
+                    m3k: req.body.m3k4,
+                    total: total4,
+                    rank: rank4,
+                },
+                tim5: {
+                    namaTim: namaTim5,
+                    m1r: req.body.m1r5,
+                    m1k: req.body.m1k5,
+                    m2r: req.body.m2r5,
+                    m2k: req.body.m2k5,
+                    m3r: req.body.m3r5,
+                    m3k: req.body.m3k5,
+                    total: total5,
+                    rank: rank5,
+                },
+                tim6: {
+                    namaTim: namaTim6,
+                    m1r: req.body.m1r6,
+                    m1k: req.body.m1k6,
+                    m2r: req.body.m2r6,
+                    m2k: req.body.m2k6,
+                    m3r: req.body.m3r6,
+                    m3k: req.body.m3k6,
+                    total: total6,
+                    rank: rank6,
+                },
+                tim7: {
+                    namaTim: namaTim7,
+                    m1r: req.body.m1r7,
+                    m1k: req.body.m1k7,
+                    m2r: req.body.m2r7,
+                    m2k: req.body.m2k7,
+                    m3r: req.body.m3r7,
+                    m3k: req.body.m3k7,
+                    total: total7,
+                    rank: rank7,
+                },
+                tim8: {
+                    namaTim: namaTim8,
+                    m1r: req.body.m1r8,
+                    m1k: req.body.m1k8,
+                    m2r: req.body.m2r8,
+                    m2k: req.body.m2k8,
+                    m3r: req.body.m3r8,
+                    m3k: req.body.m3k8,
+                    total: total8,
+                    rank: rank8,
+                },
+                tim9: {
+                    namaTim: namaTim9,
+                    m1r: req.body.m1r9,
+                    m1k: req.body.m1k9,
+                    m2r: req.body.m2r9,
+                    m2k: req.body.m2k9,
+                    m3r: req.body.m3r9,
+                    m3k: req.body.m3k9,
+                    total: total9,
+                    rank: rank9,
+                },
+                tim10: {
+                    namaTim: namaTim10,
+                    m1r: req.body.m1r10,
+                    m1k: req.body.m1k10,
+                    m2r: req.body.m2r10,
+                    m2k: req.body.m2k10,
+                    m3r: req.body.m3r10,
+                    m3k: req.body.m3k10,
+                    total: total10,
+                    rank: rank10,
+                },
+                tim11: {
+                    namaTim: namaTim11,
+                    m1r: req.body.m1r11,
+                    m1k: req.body.m1k11,
+                    m2r: req.body.m2r11,
+                    m2k: req.body.m2k11,
+                    m3r: req.body.m3r11,
+                    m3k: req.body.m3k11,
+                    total: total11,
+                    rank: rank11,
+                },
+                tim12: {
+                    namaTim: namaTim12,
+                    m1r: req.body.m1r12,
+                    m1k: req.body.m1k12,
+                    m2r: req.body.m2r12,
+                    m2k: req.body.m2k12,
+                    m3r: req.body.m3r12,
+                    m3k: req.body.m3k12,
+                    total: total12,
+                    rank: rank12,
+                },
             }
-        ).then((result) => {
-            res.redirect('/ff-form')
+        }
+        await User.findOneAndUpdate({ _id: _id }, user, { new: true }, async (err, doc) => {
+            if(!err) {
+                const user = await User.findOne({ _id: _id })
+
+                res.render('ff-form', {
+                    layout: 'layouts/main-layout',
+                    title: 'Fradotech',
+                    user,
+                })
+            }
+            else {
+                res.send(err)
+            }
         })
         
     }
