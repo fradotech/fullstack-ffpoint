@@ -8,7 +8,7 @@
   <a>Tips: Gunakan deskop mode agar tampilan tabel rapi</a>
   <a>M1R (Match 1 Rank)</a>
   <p>M1K (Match 1 Kill)</p>
-  <form method="post" action="/ff-edit">
+  <form method="post" action="/ff-form?_method=PUT">
     <input type="hidden" id="_id" name="_id" value="<%= user._id %>">
     <input type="hidden" id="namaTur" name="namaTur" value="<%= user.namaTur %>">
     <input type="hidden" id="email" name="email" value="<%= user.email %>">
