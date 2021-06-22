@@ -1,0 +1,191 @@
+<div style="background-color: #007fd0; color: white; padding: 10px;">
+  <h4><center id="namaTurnamenHasil"><%= user.namaTur %> </center></h4>
+</div>
+<br>
+
+<div class="card center" style="padding: 15px">
+  <h5>Free Fire Point Count</h5>
+  <a>Tips: Gunakan deskop mode agar tampilan tabel rapi</a>
+  <a>M1R (Match 1 Rank)</a>
+  <p>M1K (Match 1 Kill)</p>
+  <form method="post" action="/ff-edit">
+    <input type="hidden" class="form-control" id="_id" name="_id" value="<%= user._id %>">
+    <input type="hidden" class="form-control" id="namaTur" name="namaTur" value="<%= user.namaTur %>">
+    <input type="hidden" class="form-control" id="email" name="email" value="<%= user.email %>">
+    <input type="hidden" class="form-control" id="password" name="password" value="<%= user.password %>">
+      <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+              <tr class="table-primary">
+                <th scope="col">No.</th>
+                <th scope="col">Nama Tim</th>
+                <th scope="col">M1R</th>
+                <th scope="col">M1K</th>
+                <th scope="col">M2R</th>
+                <th scope="col">M2K</th>
+                <th scope="col">M3R</th>
+                <th scope="col">M3K</th>
+                <th scope="col">Total</th>
+                <th scope="col">Rank</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td><input type="name" class="form-control" id="namaTim1" name="namaTim1" value="<%= user.data.tim1.namaTim %>"></td>
+                <td><input class="form-control" id="m1r1" name="m1r1" value="<%= user.data.tim1.m1r %>"></td>
+                <td><input class="form-control" id="m1k1" name="m1k1" value="<%= user.data.tim1.m1k %>"></td>
+                <td><input class="form-control" id="m2r1" name="m2r1" value="<%= user.data.tim1.m2r %>"></td>
+                <td><input class="form-control" id="m2k1" name="m2k1" value="<%= user.data.tim1.m2k %>"></td>
+                <td><input class="form-control" id="m3r1" name="m3r1" value="<%= user.data.tim1.m3r %>"></td>    
+                <td><input class="form-control" id="m3k1" name="m3k1" value="<%= user.data.tim1.m3k %>"></td>
+                <td><%= user.data.tim1.total %> </td>
+                <td><%= user.data.tim1.rank %> </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td><input type="name" class="form-control" id="namaTim2" name="namaTim2" value="<%= user.data.tim2.namaTim %>"></td>
+                <td><input class="form-control" id="m1r2" name="m1r2" value="<%= user.data.tim2.m1r %>"></td>
+                <td><input class="form-control" id="m1k2" name="m1k2" value="<%= user.data.tim2.m1k %>"></td>
+                <td><input class="form-control" id="m2r2" name="m2r2" value="<%= user.data.tim2.m2r %>"></td>
+                <td><input class="form-control" id="m2k2" name="m2k2" value="<%= user.data.tim2.m2k %>"></td>
+                <td><input class="form-control" id="m3r2" name="m3r2" value="<%= user.data.tim2.m3r %>"></td>    
+                <td><input class="form-control" id="m3k2" name="m3k2" value="<%= user.data.tim2.m3k %>"></td>
+                <td><%= user.data.tim2.total %> </td>
+                <td><%= user.data.tim2.rank %> </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td><input type="name" class="form-control" id="namaTim3" name="namaTim3" value="<%= user.data.tim3.namaTim %>"></td>
+                <td><input class="form-control" id="m1r3" name="m1r3" value="<%= user.data.tim3.m1r %>"></td>
+                <td><input class="form-control" id="m1k3" name="m1k3" value="<%= user.data.tim3.m1k %>"></td>
+                <td><input class="form-control" id="m2r3" name="m2r3" value="<%= user.data.tim3.m2r %>"></td>
+                <td><input class="form-control" id="m2k3" name="m2k3" value="<%= user.data.tim3.m2k %>"></td>
+                <td><input class="form-control" id="m3r3" name="m3r3" value="<%= user.data.tim3.m3r %>"></td>    
+                <td><input class="form-control" id="m3k3" name="m3k3" value="<%= user.data.tim3.m3k %>"></td>
+                <td><%= user.data.tim3.total %> </td>
+                <td><%= user.data.tim3.rank %> </td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td><input type="name" class="form-control" id="namaTim4" name="namaTim4" value="<%= user.data.tim4.namaTim %>"></td>
+                <td><input class="form-control" id="m1r4" name="m1r4" value="<%= user.data.tim4.m1r %>"></td>
+                <td><input class="form-control" id="m1k4" name="m1k4" value="<%= user.data.tim4.m1k %>"></td>
+                <td><input class="form-control" id="m2r4" name="m2r4" value="<%= user.data.tim4.m2r %>"></td>
+                <td><input class="form-control" id="m2k4" name="m2k4" value="<%= user.data.tim4.m2k %>"></td>
+                <td><input class="form-control" id="m3r4" name="m3r4" value="<%= user.data.tim4.m3r %>"></td>    
+                <td><input class="form-control" id="m3k4" name="m3k4" value="<%= user.data.tim4.m3k %>"></td>
+                <td><%= user.data.tim4.total %> </td>
+                <td><%= user.data.tim4.rank %> </td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td><input type="name" class="form-control" id="namaTim5" name="namaTim5" value="<%= user.data.tim5.namaTim %>"></td>
+                <td><input class="form-control" id="m1r5" name="m1r5" value="<%= user.data.tim5.m1r %>"></td>
+                <td><input class="form-control" id="m1k5" name="m1k5" value="<%= user.data.tim5.m1k %>"></td>
+                <td><input class="form-control" id="m2r5" name="m2r5" value="<%= user.data.tim5.m2r %>"></td>
+                <td><input class="form-control" id="m2k5" name="m2k5" value="<%= user.data.tim5.m2k %>"></td>
+                <td><input class="form-control" id="m3r5" name="m3r5" value="<%= user.data.tim5.m3r %>"></td>    
+                <td><input class="form-control" id="m3k5" name="m3k5" value="<%= user.data.tim5.m3k %>"></td>
+                <td><%= user.data.tim5.total %> </td>
+                <td><%= user.data.tim5.rank %> </td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td><input type="name" class="form-control" id="namaTim6" name="namaTim6" value="<%= user.data.tim6.namaTim %>"></td>
+                <td><input class="form-control" id="m1r6" name="m1r6" value="<%= user.data.tim6.m1r %>"></td>
+                <td><input class="form-control" id="m1k6" name="m1k6" value="<%= user.data.tim6.m1k %>"></td>
+                <td><input class="form-control" id="m2r6" name="m2r6" value="<%= user.data.tim6.m2r %>"></td>
+                <td><input class="form-control" id="m2k6" name="m2k6" value="<%= user.data.tim6.m2k %>"></td>
+                <td><input class="form-control" id="m3r6" name="m3r6" value="<%= user.data.tim6.m3r %>"></td>    
+                <td><input class="form-control" id="m3k6" name="m3k6" value="<%= user.data.tim6.m3k %>"></td>
+                <td><%= user.data.tim6.total %> </td>
+                <td><%= user.data.tim6.rank %> </td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td><input type="name" class="form-control" id="namaTim7" name="namaTim7" value="<%= user.data.tim7.namaTim %>"></td>
+                <td><input class="form-control" id="m1r7" name="m1r7" value="<%= user.data.tim7.m1r %>"></td>
+                <td><input class="form-control" id="m1k7" name="m1k7" value="<%= user.data.tim7.m1k %>"></td>
+                <td><input class="form-control" id="m2r7" name="m2r7" value="<%= user.data.tim7.m2r %>"></td>
+                <td><input class="form-control" id="m2k7" name="m2k7" value="<%= user.data.tim7.m2k %>"></td>
+                <td><input class="form-control" id="m3r7" name="m3r7" value="<%= user.data.tim7.m3r %>"></td>    
+                <td><input class="form-control" id="m3k7" name="m3k7" value="<%= user.data.tim7.m3k %>"></td>
+                <td><%= user.data.tim7.total %> </td>
+                <td><%= user.data.tim7.rank %> </td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td><input type="name" class="form-control" id="namaTim8" name="namaTim8" value="<%= user.data.tim8.namaTim %>"></td>
+                <td><input class="form-control" id="m1r8" name="m1r8" value="<%= user.data.tim8.m1r %>"></td>
+                <td><input class="form-control" id="m1k8" name="m1k8" value="<%= user.data.tim8.m1k %>"></td>
+                <td><input class="form-control" id="m2r8" name="m2r8" value="<%= user.data.tim8.m2r %>"></td>
+                <td><input class="form-control" id="m2k8" name="m2k8" value="<%= user.data.tim8.m2k %>"></td>
+                <td><input class="form-control" id="m3r8" name="m3r8" value="<%= user.data.tim8.m3r %>"></td>    
+                <td><input class="form-control" id="m3k8" name="m3k8" value="<%= user.data.tim8.m3k %>"></td>
+                <td><%= user.data.tim8.total %> </td>
+                <td><%= user.data.tim8.rank %> </td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td><input type="name" class="form-control" id="namaTim9" name="namaTim9" value="<%= user.data.tim9.namaTim %>"></td>
+                <td><input class="form-control" id="m1r9" name="m1r9" value="<%= user.data.tim9.m1r %>"></td>
+                <td><input class="form-control" id="m1k9" name="m1k9" value="<%= user.data.tim9.m1k %>"></td>
+                <td><input class="form-control" id="m2r9" name="m2r9" value="<%= user.data.tim9.m2r %>"></td>
+                <td><input class="form-control" id="m2k9" name="m2k9" value="<%= user.data.tim9.m2k %>"></td>
+                <td><input class="form-control" id="m3r9" name="m3r9" value="<%= user.data.tim9.m3r %>"></td>    
+                <td><input class="form-control" id="m3k9" name="m3k9" value="<%= user.data.tim9.m3k %>"></td>
+                <td><%= user.data.tim9.total %> </td>
+                <td><%= user.data.tim9.rank %> </td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td><input type="name" class="form-control" id="namaTim10" name="namaTim10" value="<%= user.data.tim10.namaTim %>"></td>
+                <td><input class="form-control" id="m1r10" name="m1r10" value="<%= user.data.tim10.m1r %>"></td>
+                <td><input class="form-control" id="m1k10" name="m1k10" value="<%= user.data.tim10.m1k %>"></td>
+                <td><input class="form-control" id="m2r10" name="m2r10" value="<%= user.data.tim10.m2r %>"></td>
+                <td><input class="form-control" id="m2k10" name="m2k10" value="<%= user.data.tim10.m2k %>"></td>
+                <td><input class="form-control" id="m3r10" name="m3r10" value="<%= user.data.tim10.m3r %>"></td>    
+                <td><input class="form-control" id="m3k10" name="m3k10" value="<%= user.data.tim10.m3k %>"></td>
+                <td><%= user.data.tim10.total %> </td>
+                <td><%= user.data.tim10.rank %> </td>
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <td><input type="name" class="form-control" id="namaTim11" name="namaTim11" value="<%= user.data.tim11.namaTim %>"></td>
+                <td><input class="form-control" id="m1r11" name="m1r11" value="<%= user.data.tim11.m1r %>"></td>
+                <td><input class="form-control" id="m1k11" name="m1k11" value="<%= user.data.tim11.m1k %>"></td>
+                <td><input class="form-control" id="m2r11" name="m2r11" value="<%= user.data.tim11.m2r %>"></td>
+                <td><input class="form-control" id="m2k11" name="m2k11" value="<%= user.data.tim11.m2k %>"></td>
+                <td><input class="form-control" id="m3r11" name="m3r11" value="<%= user.data.tim11.m3r %>"></td>    
+                <td><input class="form-control" id="m3k11" name="m3k11" value="<%= user.data.tim11.m3k %>"></td>
+                <td><%= user.data.tim11.total %> </td>
+                <td><%= user.data.tim11.rank %> </td>
+              </tr>
+              <tr>
+                <th scope="row">12</th>
+                <td><input type="name" class="form-control" id="namaTim12" name="namaTim12" value="<%= user.data.tim12.namaTim %>"></td>
+                <td><input class="form-control" id="m1r12" name="m1r12" value="<%= user.data.tim12.m1r %>"></td>
+                <td><input class="form-control" id="m1k12" name="m1k12" value="<%= user.data.tim12.m1k %>"></td>
+                <td><input class="form-control" id="m2r12" name="m1r12" value="<%= user.data.tim12.m2r %>"></td>
+                <td><input class="form-control" id="m2k12" name="m1k12" value="<%= user.data.tim12.m2k %>"></td>
+                <td><input class="form-control" id="m3r12" name="m1r12" value="<%= user.data.tim12.m3r %>"></td>    
+                <td><input class="form-control" id="m3k12" name="m1k12" value="<%= user.data.tim12.m3k %>"></td>
+                <td><%= user.data.tim12.total %> </td>
+                <td><%= user.data.tim12.rank %> </td>
+              </tr>
+              
+            </tbody>
+          </table>
+      </div>
+      <button type="submit" class="btn btn-primary" style="color: white;">Simpan</button>
+  </form>
+  <hr>
+  <a href="/ff-hasil/<%= user._id %> " class="btn btn-primary" style="color: white;">LIHAT HASIL</a>
+</div>
+<br>
+
+<div><center><img src="img/ff-point.jpg" alt="" style="width: 300px;"></center></div>
+<br>
+
+</div>
