@@ -5,10 +5,8 @@
 <div><center><img src="img/ff-banner.jpg" alt="" style="width: 400px;"></center></div>
 
 <div class="card center" style="padding: 15px">
-  <h5>Free Fire Point Count</h5>
-  <a>Tips: Gunakan deskop mode agar tampilan tabel rapi</a>
-  <a>M1R (Match 1 Rank)</a>
-  <p>M1K (Match 1 Kill)</p>
+  <h4>Free Fire Point Count</h4>
+  <p></p>
   <form method="post" action="/ff-edit">
     <input type="hidden" id="_id" name="_id" value="<%= user._id %>">
     <input type="hidden" id="namaTur" name="namaTur" value="<%= user.namaTur %>">
@@ -181,6 +179,10 @@
       </div>
       <button type="submit" class="btn btn-primary" style="color: white;">Simpan</button>
   </form>
+  <hr>
+  <a>Tips: Gunakan deskop mode agar tampilan tabel rapi</a>
+  <a>M1R (Match 1 Rank)</a>
+  <p>M1K (Match 1 Kill)</p>
   <hr>
   <a href="/ff-hasil/<%= user._id %> " class="btn btn-primary" style="color: white;">LIHAT HASIL</a>
 </div>
