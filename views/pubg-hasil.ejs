@@ -1,0 +1,436 @@
+<div style="background-color: #007fd0; color: white; padding: 10px;">
+  <h4><center id="namaTurnamenHasil"><%= user.namaTur %> </center></h4>
+</div>
+<br>
+<div><center><img src="img/pubg-banner.jpg" alt="" style="width: 400px;"></center></div>
+
+<div class="card center" style="padding: 15px;">
+  <div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+          <tr class="table-primary">
+            <th scope="col">No.</th>
+            <th scope="col">Nama Tim</th>
+            <th scope="col">M1R</th>
+            <th scope="col">M1K</th>
+            <th scope="col">M2R</th>
+            <th scope="col">M2K</th>
+            <th scope="col">M3R</th>
+            <th scope="col">M3K</th>
+            <th scope="col">M4R</th>
+            <th scope="col">M4K</th>
+            <th scope="col">M5R</th>
+            <th scope="col">M5K</th>
+            <th scope="col">Total</th>
+            <th scope="col">Juara</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td><%= user.data.tim1.namaTim %></td>
+            <td><%= user.data.tim1.m1r %></td>
+            <td><%= user.data.tim1.m1k %></td>
+            <td><%= user.data.tim1.m2r %></td>
+            <td><%= user.data.tim1.m2k %></td>
+            <td><%= user.data.tim1.m3r %></td>
+            <td><%= user.data.tim1.m3k %></td>
+            <td><%= user.data.tim1.m4r %></td>
+            <td><%= user.data.tim1.m4k %></td>
+            <td><%= user.data.tim1.m5r %></td>
+            <td><%= user.data.tim1.m5k %></td>
+            <td><%= user.data.tim1.total %></td>    
+            <td><%= user.data.tim1.rank %></td>   
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td><%= user.data.tim2.namaTim %></td>
+            <td><%= user.data.tim2.m1r %></td>
+            <td><%= user.data.tim2.m1k %></td>
+            <td><%= user.data.tim2.m2r %></td>
+            <td><%= user.data.tim2.m2k %></td>
+            <td><%= user.data.tim2.m3r %></td>
+            <td><%= user.data.tim2.m3k %></td>
+            <td><%= user.data.tim2.m4r %></td>
+            <td><%= user.data.tim2.m4k %></td>
+            <td><%= user.data.tim2.m5r %></td>
+            <td><%= user.data.tim2.m5k %></td>
+            <td><%= user.data.tim2.total %></td>    
+            <td><%= user.data.tim2.rank %></td>   
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td><%= user.data.tim3.namaTim %></td>
+            <td><%= user.data.tim3.m1r %></td>
+            <td><%= user.data.tim3.m1k %></td>
+            <td><%= user.data.tim3.m2r %></td>
+            <td><%= user.data.tim3.m2k %></td>
+            <td><%= user.data.tim3.m3r %></td>
+            <td><%= user.data.tim3.m3k %></td>
+            <td><%= user.data.tim3.m4r %></td>
+            <td><%= user.data.tim3.m4k %></td>
+            <td><%= user.data.tim3.m5r %></td>
+            <td><%= user.data.tim3.m5k %></td>
+            <td><%= user.data.tim3.total %></td>    
+            <td><%= user.data.tim3.rank %></td>   
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td><%= user.data.tim4.namaTim %></td>
+            <td><%= user.data.tim4.m1r %></td>
+            <td><%= user.data.tim4.m1k %></td>
+            <td><%= user.data.tim4.m2r %></td>
+            <td><%= user.data.tim4.m2k %></td>
+            <td><%= user.data.tim4.m3r %></td>
+            <td><%= user.data.tim4.m3k %></td>
+            <td><%= user.data.tim4.m4r %></td>
+            <td><%= user.data.tim4.m4k %></td>
+            <td><%= user.data.tim4.m5r %></td>
+            <td><%= user.data.tim4.m5k %></td>
+            <td><%= user.data.tim4.total %></td>    
+            <td><%= user.data.tim4.rank %></td>   
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td><%= user.data.tim5.namaTim %></td>
+            <td><%= user.data.tim5.m1r %></td>
+            <td><%= user.data.tim5.m1k %></td>
+            <td><%= user.data.tim5.m2r %></td>
+            <td><%= user.data.tim5.m2k %></td>
+            <td><%= user.data.tim5.m3r %></td>
+            <td><%= user.data.tim5.m3k %></td>
+            <td><%= user.data.tim5.m4r %></td>
+            <td><%= user.data.tim5.m4k %></td>
+            <td><%= user.data.tim5.m5r %></td>
+            <td><%= user.data.tim5.m5k %></td>
+            <td><%= user.data.tim5.total %></td>    
+            <td><%= user.data.tim5.rank %></td>   
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td><%= user.data.tim6.namaTim %></td>
+            <td><%= user.data.tim6.m1r %></td>
+            <td><%= user.data.tim6.m1k %></td>
+            <td><%= user.data.tim6.m2r %></td>
+            <td><%= user.data.tim6.m2k %></td>
+            <td><%= user.data.tim6.m3r %></td>
+            <td><%= user.data.tim6.m3k %></td>
+            <td><%= user.data.tim6.m4r %></td>
+            <td><%= user.data.tim6.m4k %></td>
+            <td><%= user.data.tim6.m5r %></td>
+            <td><%= user.data.tim6.m5k %></td>
+            <td><%= user.data.tim6.total %></td>    
+            <td><%= user.data.tim6.rank %></td>   
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td><%= user.data.tim7.namaTim %></td>
+            <td><%= user.data.tim7.m1r %></td>
+            <td><%= user.data.tim7.m1k %></td>
+            <td><%= user.data.tim7.m2r %></td>
+            <td><%= user.data.tim7.m2k %></td>
+            <td><%= user.data.tim7.m3r %></td>
+            <td><%= user.data.tim7.m3k %></td>
+            <td><%= user.data.tim7.m4r %></td>
+            <td><%= user.data.tim7.m4k %></td>
+            <td><%= user.data.tim7.m5r %></td>
+            <td><%= user.data.tim7.m5k %></td>
+            <td><%= user.data.tim7.total %></td>    
+            <td><%= user.data.tim7.rank %></td>   
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td><%= user.data.tim8.namaTim %></td>
+            <td><%= user.data.tim8.m1r %></td>
+            <td><%= user.data.tim8.m1k %></td>
+            <td><%= user.data.tim8.m2r %></td>
+            <td><%= user.data.tim8.m2k %></td>
+            <td><%= user.data.tim8.m3r %></td>
+            <td><%= user.data.tim8.m3k %></td>
+            <td><%= user.data.tim8.m4r %></td>
+            <td><%= user.data.tim8.m4k %></td>
+            <td><%= user.data.tim8.m5r %></td>
+            <td><%= user.data.tim8.m5k %></td>
+            <td><%= user.data.tim8.total %></td>    
+            <td><%= user.data.tim8.rank %></td>   
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td><%= user.data.tim9.namaTim %></td>
+            <td><%= user.data.tim9.m1r %></td>
+            <td><%= user.data.tim9.m1k %></td>
+            <td><%= user.data.tim9.m2r %></td>
+            <td><%= user.data.tim9.m2k %></td>
+            <td><%= user.data.tim9.m3r %></td>
+            <td><%= user.data.tim9.m3k %></td>
+            <td><%= user.data.tim9.m4r %></td>
+            <td><%= user.data.tim9.m4k %></td>
+            <td><%= user.data.tim9.m5r %></td>
+            <td><%= user.data.tim9.m5k %></td>
+            <td><%= user.data.tim9.total %></td>    
+            <td><%= user.data.tim9.rank %></td>   
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td><%= user.data.tim10.namaTim %></td>
+            <td><%= user.data.tim10.m1r %></td>
+            <td><%= user.data.tim10.m1k %></td>
+            <td><%= user.data.tim10.m2r %></td>
+            <td><%= user.data.tim10.m2k %></td>
+            <td><%= user.data.tim10.m3r %></td>
+            <td><%= user.data.tim10.m3k %></td>
+            <td><%= user.data.tim10.m4r %></td>
+            <td><%= user.data.tim10.m4k %></td>
+            <td><%= user.data.tim10.m5r %></td>
+            <td><%= user.data.tim10.m5k %></td>
+            <td><%= user.data.tim10.total %></td>    
+            <td><%= user.data.tim10.rank %></td>   
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td><%= user.data.tim11.namaTim %></td>
+            <td><%= user.data.tim11.m1r %></td>
+            <td><%= user.data.tim11.m1k %></td>
+            <td><%= user.data.tim11.m2r %></td>
+            <td><%= user.data.tim11.m2k %></td>
+            <td><%= user.data.tim11.m3r %></td>
+            <td><%= user.data.tim11.m3k %></td>
+            <td><%= user.data.tim11.m4r %></td>
+            <td><%= user.data.tim11.m4k %></td>
+            <td><%= user.data.tim11.m5r %></td>
+            <td><%= user.data.tim11.m5k %></td>
+            <td><%= user.data.tim11.total %></td>    
+            <td><%= user.data.tim11.rank %></td>   
+          </tr>
+          <tr>
+            <th scope="row">12</th>
+            <td><%= user.data.tim12.namaTim %></td>
+            <td><%= user.data.tim12.m1r %></td>
+            <td><%= user.data.tim12.m1k %></td>
+            <td><%= user.data.tim12.m2r %></td>
+            <td><%= user.data.tim12.m2k %></td>
+            <td><%= user.data.tim12.m3r %></td>
+            <td><%= user.data.tim12.m3k %></td>
+            <td><%= user.data.tim12.m4r %></td>
+            <td><%= user.data.tim12.m4k %></td>
+            <td><%= user.data.tim12.m5r %></td>
+            <td><%= user.data.tim12.m5k %></td>
+            <td><%= user.data.tim12.total %></td>    
+            <td><%= user.data.tim12.rank %></td>   
+          </tr>
+          <tr>
+            <th scope="row">13</th>
+            <td><%= user.data.tim13.namaTim %></td>
+            <td><%= user.data.tim13.m1r %></td>
+            <td><%= user.data.tim13.m1k %></td>
+            <td><%= user.data.tim13.m2r %></td>
+            <td><%= user.data.tim13.m2k %></td>
+            <td><%= user.data.tim13.m3r %></td>
+            <td><%= user.data.tim13.m3k %></td>
+            <td><%= user.data.tim13.m4r %></td>
+            <td><%= user.data.tim13.m4k %></td>
+            <td><%= user.data.tim13.m5r %></td>
+            <td><%= user.data.tim13.m5k %></td>
+            <td><%= user.data.tim13.total %></td>    
+            <td><%= user.data.tim13.rank %></td>   
+          </tr>
+          <tr>
+            <th scope="row">14</th>
+            <td><%= user.data.tim14.namaTim %></td>
+            <td><%= user.data.tim14.m1r %></td>
+            <td><%= user.data.tim14.m1k %></td>
+            <td><%= user.data.tim14.m2r %></td>
+            <td><%= user.data.tim14.m2k %></td>
+            <td><%= user.data.tim14.m3r %></td>
+            <td><%= user.data.tim14.m3k %></td>
+            <td><%= user.data.tim14.m4r %></td>
+            <td><%= user.data.tim14.m4k %></td>
+            <td><%= user.data.tim14.m5r %></td>
+            <td><%= user.data.tim14.m5k %></td>
+            <td><%= user.data.tim14.total %></td>    
+            <td><%= user.data.tim14.rank %></td>   
+          </tr>
+          <tr>
+            <th scope="row">15</th>
+            <td><%= user.data.tim15.namaTim %></td>
+            <td><%= user.data.tim15.m1r %></td>
+            <td><%= user.data.tim15.m1k %></td>
+            <td><%= user.data.tim15.m2r %></td>
+            <td><%= user.data.tim15.m2k %></td>
+            <td><%= user.data.tim15.m3r %></td>
+            <td><%= user.data.tim15.m3k %></td>
+            <td><%= user.data.tim15.m4r %></td>
+            <td><%= user.data.tim15.m4k %></td>
+            <td><%= user.data.tim15.m5r %></td>
+            <td><%= user.data.tim15.m5k %></td>
+            <td><%= user.data.tim15.total %></td>    
+            <td><%= user.data.tim15.rank %></td>   
+          </tr>
+          <tr>
+            <th scope="row">16</th>
+            <td><%= user.data.tim16.namaTim %></td>
+            <td><%= user.data.tim16.m1r %></td>
+            <td><%= user.data.tim16.m1k %></td>
+            <td><%= user.data.tim16.m2r %></td>
+            <td><%= user.data.tim16.m2k %></td>
+            <td><%= user.data.tim16.m3r %></td>
+            <td><%= user.data.tim16.m3k %></td>
+            <td><%= user.data.tim16.m4r %></td>
+            <td><%= user.data.tim16.m4k %></td>
+            <td><%= user.data.tim16.m5r %></td>
+            <td><%= user.data.tim16.m5k %></td>
+            <td><%= user.data.tim16.total %></td>    
+            <td><%= user.data.tim16.rank %></td>   
+          </tr>
+          <tr>
+            <th scope="row">17</th>
+            <td><%= user.data.tim17.namaTim %></td>
+            <td><%= user.data.tim17.m1r %></td>
+            <td><%= user.data.tim17.m1k %></td>
+            <td><%= user.data.tim17.m2r %></td>
+            <td><%= user.data.tim17.m2k %></td>
+            <td><%= user.data.tim17.m3r %></td>
+            <td><%= user.data.tim17.m3k %></td>
+            <td><%= user.data.tim17.m4r %></td>
+            <td><%= user.data.tim17.m4k %></td>
+            <td><%= user.data.tim17.m5r %></td>
+            <td><%= user.data.tim17.m5k %></td>
+            <td><%= user.data.tim17.total %></td>    
+            <td><%= user.data.tim17.rank %></td>   
+          </tr>
+          <tr>
+            <th scope="row">18</th>
+            <td><%= user.data.tim18.namaTim %></td>
+            <td><%= user.data.tim18.m1r %></td>
+            <td><%= user.data.tim18.m1k %></td>
+            <td><%= user.data.tim18.m2r %></td>
+            <td><%= user.data.tim18.m2k %></td>
+            <td><%= user.data.tim18.m3r %></td>
+            <td><%= user.data.tim18.m3k %></td>
+            <td><%= user.data.tim18.m4r %></td>
+            <td><%= user.data.tim18.m4k %></td>
+            <td><%= user.data.tim18.m5r %></td>
+            <td><%= user.data.tim18.m5k %></td>
+            <td><%= user.data.tim18.total %></td>    
+            <td><%= user.data.tim18.rank %></td>   
+          </tr>
+          <tr>
+            <th scope="row">19</th>
+            <td><%= user.data.tim19.namaTim %></td>
+            <td><%= user.data.tim19.m1r %></td>
+            <td><%= user.data.tim19.m1k %></td>
+            <td><%= user.data.tim19.m2r %></td>
+            <td><%= user.data.tim19.m2k %></td>
+            <td><%= user.data.tim19.m3r %></td>
+            <td><%= user.data.tim19.m3k %></td>
+            <td><%= user.data.tim19.m4r %></td>
+            <td><%= user.data.tim19.m4k %></td>
+            <td><%= user.data.tim19.m5r %></td>
+            <td><%= user.data.tim19.m5k %></td>
+            <td><%= user.data.tim19.total %></td>    
+            <td><%= user.data.tim19.rank %></td>   
+          </tr>
+          <tr>
+            <th scope="row">20</th>
+            <td><%= user.data.tim20.namaTim %></td>
+            <td><%= user.data.tim20.m1r %></td>
+            <td><%= user.data.tim20.m1k %></td>
+            <td><%= user.data.tim20.m2r %></td>
+            <td><%= user.data.tim20.m2k %></td>
+            <td><%= user.data.tim20.m3r %></td>
+            <td><%= user.data.tim20.m3k %></td>
+            <td><%= user.data.tim20.m4r %></td>
+            <td><%= user.data.tim20.m4k %></td>
+            <td><%= user.data.tim20.m5r %></td>
+            <td><%= user.data.tim20.m5k %></td>
+            <td><%= user.data.tim20.total %></td>    
+            <td><%= user.data.tim20.rank %></td>   
+          </tr>
+          <tr>
+            <th scope="row">21</th>
+            <td><%= user.data.tim21.namaTim %></td>
+            <td><%= user.data.tim21.m1r %></td>
+            <td><%= user.data.tim21.m1k %></td>
+            <td><%= user.data.tim21.m2r %></td>
+            <td><%= user.data.tim21.m2k %></td>
+            <td><%= user.data.tim21.m3r %></td>
+            <td><%= user.data.tim21.m3k %></td>
+            <td><%= user.data.tim21.m4r %></td>
+            <td><%= user.data.tim21.m4k %></td>
+            <td><%= user.data.tim21.m5r %></td>
+            <td><%= user.data.tim21.m5k %></td>
+            <td><%= user.data.tim21.total %></td>    
+            <td><%= user.data.tim21.rank %></td>   
+          </tr>
+          <tr>
+            <th scope="row">22</th>
+            <td><%= user.data.tim22.namaTim %></td>
+            <td><%= user.data.tim22.m1r %></td>
+            <td><%= user.data.tim22.m1k %></td>
+            <td><%= user.data.tim22.m2r %></td>
+            <td><%= user.data.tim22.m2k %></td>
+            <td><%= user.data.tim22.m3r %></td>
+            <td><%= user.data.tim22.m3k %></td>
+            <td><%= user.data.tim22.m4r %></td>
+            <td><%= user.data.tim22.m4k %></td>
+            <td><%= user.data.tim22.m5r %></td>
+            <td><%= user.data.tim22.m5k %></td>
+            <td><%= user.data.tim22.total %></td>    
+            <td><%= user.data.tim22.rank %></td>   
+          </tr>
+          <tr>
+            <th scope="row">23</th>
+            <td><%= user.data.tim23.namaTim %></td>
+            <td><%= user.data.tim23.m1r %></td>
+            <td><%= user.data.tim23.m1k %></td>
+            <td><%= user.data.tim23.m2r %></td>
+            <td><%= user.data.tim23.m2k %></td>
+            <td><%= user.data.tim23.m3r %></td>
+            <td><%= user.data.tim23.m3k %></td>
+            <td><%= user.data.tim23.m4r %></td>
+            <td><%= user.data.tim23.m4k %></td>
+            <td><%= user.data.tim23.m5r %></td>
+            <td><%= user.data.tim23.m5k %></td>
+            <td><%= user.data.tim23.total %></td>    
+            <td><%= user.data.tim23.rank %></td>   
+          </tr>
+          <tr>
+            <th scope="row">24</th>
+            <td><%= user.data.tim24.namaTim %></td>
+            <td><%= user.data.tim24.m1r %></td>
+            <td><%= user.data.tim24.m1k %></td>
+            <td><%= user.data.tim24.m2r %></td>
+            <td><%= user.data.tim24.m2k %></td>
+            <td><%= user.data.tim24.m3r %></td>
+            <td><%= user.data.tim24.m3k %></td>
+            <td><%= user.data.tim24.m4r %></td>
+            <td><%= user.data.tim24.m4k %></td>
+            <td><%= user.data.tim24.m5r %></td>
+            <td><%= user.data.tim24.m5k %></td>
+            <td><%= user.data.tim24.total %></td>    
+            <td><%= user.data.tim24.rank %></td>   
+          </tr>
+          <tr>
+            <th scope="row">25</th>
+            <td><%= user.data.tim25.namaTim %></td>
+            <td><%= user.data.tim25.m1r %></td>
+            <td><%= user.data.tim25.m1k %></td>
+            <td><%= user.data.tim25.m2r %></td>
+            <td><%= user.data.tim25.m2k %></td>
+            <td><%= user.data.tim25.m3r %></td>
+            <td><%= user.data.tim25.m3k %></td>
+            <td><%= user.data.tim25.m4r %></td>
+            <td><%= user.data.tim25.m4k %></td>
+            <td><%= user.data.tim25.m5r %></td>
+            <td><%= user.data.tim25.m5k %></td>
+            <td><%= user.data.tim25.total %></td>    
+            <td><%= user.data.tim25.rank %></td>   
+          </tr>
+        </tbody>
+    </table>
+    <p></p>
+    <a>M1R (Match 1 Rank)</a>
+    <p>M1K (Match 1 Kill)</p>
+  </div>
+  <div><center><img src="img/pubg-point.jpg" alt="" style="width: 300px;"></center></div>
+</div>
