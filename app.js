@@ -61,6 +61,10 @@ app.post('/ff-register', (req, res) => {
                 m2k: null,
                 m3r: null,
                 m3k: null,
+                m4r: null,
+                m4k: null,
+                m5r: null,
+                m5k: null,
                 total: null,
                 rank: null,
             },
@@ -72,6 +76,10 @@ app.post('/ff-register', (req, res) => {
                 m2k: null,
                 m3r: null,
                 m3k: null,
+                m4r: null,
+                m4k: null,
+                m5r: null,
+                m5k: null,
                 total: null,
                 rank: null,
             },
@@ -83,6 +91,10 @@ app.post('/ff-register', (req, res) => {
                 m2k: null,
                 m3r: null,
                 m3k: null,
+                m4r: null,
+                m4k: null,
+                m5r: null,
+                m5k: null,
                 total: null,
                 rank: null,
             },
@@ -94,6 +106,10 @@ app.post('/ff-register', (req, res) => {
                 m2k: null,
                 m3r: null,
                 m3k: null,
+                m4r: null,
+                m4k: null,
+                m5r: null,
+                m5k: null,
                 total: null,
                 rank: null,
             },
@@ -105,6 +121,10 @@ app.post('/ff-register', (req, res) => {
                 m2k: null,
                 m3r: null,
                 m3k: null,
+                m4r: null,
+                m4k: null,
+                m5r: null,
+                m5k: null,
                 total: null,
                 rank: null,
             },
@@ -116,6 +136,10 @@ app.post('/ff-register', (req, res) => {
                 m2k: null,
                 m3r: null,
                 m3k: null,
+                m4r: null,
+                m4k: null,
+                m5r: null,
+                m5k: null,
                 total: null,
                 rank: null,
             },
@@ -127,6 +151,10 @@ app.post('/ff-register', (req, res) => {
                 m2k: null,
                 m3r: null,
                 m3k: null,
+                m4r: null,
+                m4k: null,
+                m5r: null,
+                m5k: null,
                 total: null,
                 rank: null,
             },
@@ -138,6 +166,10 @@ app.post('/ff-register', (req, res) => {
                 m2k: null,
                 m3r: null,
                 m3k: null,
+                m4r: null,
+                m4k: null,
+                m5r: null,
+                m5k: null,
                 total: null,
                 rank: null,
             },
@@ -149,6 +181,10 @@ app.post('/ff-register', (req, res) => {
                 m2k: null,
                 m3r: null,
                 m3k: null,
+                m4r: null,
+                m4k: null,
+                m5r: null,
+                m5k: null,
                 total: null,
                 rank: null,
             },
@@ -160,6 +196,10 @@ app.post('/ff-register', (req, res) => {
                 m2k: null,
                 m3r: null,
                 m3k: null,
+                m4r: null,
+                m4k: null,
+                m5r: null,
+                m5k: null,
                 total: null,
                 rank: null,
             },
@@ -171,6 +211,10 @@ app.post('/ff-register', (req, res) => {
                 m2k: null,
                 m3r: null,
                 m3k: null,
+                m4r: null,
+                m4k: null,
+                m5r: null,
+                m5k: null,
                 total: null,
                 rank: null,
             },
@@ -182,6 +226,10 @@ app.post('/ff-register', (req, res) => {
                 m2k: null,
                 m3r: null,
                 m3k: null,
+                m4r: null,
+                m4k: null,
+                m5r: null,
+                m5k: null,
                 total: null,
                 rank: null,
             },
@@ -244,62 +292,86 @@ app.post('/ff-edit', (req, res) => {
     let total1 = 
     (getRank(req.body.m1r1) + (req.body.m1k1 * 1)) +
     (getRank(req.body.m2r1) + (req.body.m2k1 * 1)) +
-    (getRank(req.body.m3r1) + (req.body.m3k1 * 1))
+    (getRank(req.body.m3r1) + (req.body.m3k1 * 1)) +
+    (getRank(req.body.m4r1) + (req.body.m4k1 * 1)) +
+    (getRank(req.body.m5r1) + (req.body.m5k1 * 1))
 
     let total2 = 
     (getRank(req.body.m1r2) + (req.body.m1k2 * 1)) +
     (getRank(req.body.m2r2) + (req.body.m2k2 * 1)) +
-    (getRank(req.body.m3r2) + (req.body.m3k2 * 1))
+    (getRank(req.body.m3r2) + (req.body.m3k2 * 1)) +
+    (getRank(req.body.m4r2) + (req.body.m4k2 * 1)) +
+    (getRank(req.body.m5r2) + (req.body.m5k2 * 1))
 
     let total3 = 
     (getRank(req.body.m1r3) + (req.body.m1k3 * 1)) +
     (getRank(req.body.m2r3) + (req.body.m2k3 * 1)) +
-    (getRank(req.body.m3r3) + (req.body.m3k3 * 1))
+    (getRank(req.body.m3r3) + (req.body.m3k3 * 1)) +
+    (getRank(req.body.m4r3) + (req.body.m4k3 * 1)) +
+    (getRank(req.body.m5r3) + (req.body.m5k3 * 1))
 
     let total4 = 
     (getRank(req.body.m1r4) + (req.body.m1k4 * 1)) +
     (getRank(req.body.m2r4) + (req.body.m2k4 * 1)) +
-    (getRank(req.body.m3r4) + (req.body.m3k4 * 1))
+    (getRank(req.body.m3r4) + (req.body.m3k4 * 1)) +
+    (getRank(req.body.m4r4) + (req.body.m4k4 * 1)) +
+    (getRank(req.body.m5r4) + (req.body.m5k4 * 1))
 
     let total5 = 
     (getRank(req.body.m1r5) + (req.body.m1k5 * 1)) +
     (getRank(req.body.m2r5) + (req.body.m2k5 * 1)) +
-    (getRank(req.body.m3r5) + (req.body.m3k5 * 1))
+    (getRank(req.body.m3r5) + (req.body.m3k5 * 1)) +
+    (getRank(req.body.m4r5) + (req.body.m4k5 * 1)) +
+    (getRank(req.body.m5r5) + (req.body.m5k5 * 1))
 
     let total6 = 
     (getRank(req.body.m1r6) + (req.body.m1k6 * 1)) +
     (getRank(req.body.m2r6) + (req.body.m2k6 * 1)) +
-    (getRank(req.body.m3r6) + (req.body.m3k6 * 1))
+    (getRank(req.body.m3r6) + (req.body.m3k6 * 1)) +
+    (getRank(req.body.m4r6) + (req.body.m4k6 * 1)) +
+    (getRank(req.body.m5r6) + (req.body.m5k6 * 1))
 
     let total7 = 
     (getRank(req.body.m1r7) + (req.body.m1k7 * 1)) +
     (getRank(req.body.m2r7) + (req.body.m2k7 * 1)) +
-    (getRank(req.body.m3r7) + (req.body.m3k7 * 1))
+    (getRank(req.body.m3r7) + (req.body.m3k7 * 1)) +
+    (getRank(req.body.m4r7) + (req.body.m4k7 * 1)) +
+    (getRank(req.body.m5r7) + (req.body.m5k7 * 1))
 
     let total8 = 
     (getRank(req.body.m1r8) + (req.body.m1k8 * 1)) +
     (getRank(req.body.m2r8) + (req.body.m2k8 * 1)) +
-    (getRank(req.body.m3r8) + (req.body.m3k8 * 1))
+    (getRank(req.body.m3r8) + (req.body.m3k8 * 1)) +
+    (getRank(req.body.m4r8) + (req.body.m4k8 * 1)) +
+    (getRank(req.body.m5r8) + (req.body.m5k8 * 1))
 
     let total9 = 
     (getRank(req.body.m1r9) + (req.body.m1k9 * 1)) +
     (getRank(req.body.m2r9) + (req.body.m2k9 * 1)) +
-    (getRank(req.body.m3r9) + (req.body.m3k9 * 1))
+    (getRank(req.body.m3r9) + (req.body.m3k9 * 1)) +
+    (getRank(req.body.m4r9) + (req.body.m4k9 * 1)) +
+    (getRank(req.body.m5r9) + (req.body.m5k9 * 1))
 
     let total10 = 
     (getRank(req.body.m1r10) + (req.body.m1k10 * 1)) +
     (getRank(req.body.m2r10) + (req.body.m2k10 * 1)) +
-    (getRank(req.body.m3r10) + (req.body.m3k10 * 1))
+    (getRank(req.body.m3r10) + (req.body.m3k10 * 1)) +
+    (getRank(req.body.m4r10) + (req.body.m4k10 * 1)) +
+    (getRank(req.body.m5r10) + (req.body.m5k10 * 1))
 
     let total11 = 
     (getRank(req.body.m1r11) + (req.body.m1k11 * 1)) +
     (getRank(req.body.m2r11) + (req.body.m2k11 * 1)) +
-    (getRank(req.body.m3r11) + (req.body.m3k11 * 1))
+    (getRank(req.body.m3r11) + (req.body.m3k11 * 1)) +
+    (getRank(req.body.m4r11) + (req.body.m4k11 * 1)) +
+    (getRank(req.body.m5r11) + (req.body.m5k11 * 1))
 
     let total12 = 
     (getRank(req.body.m1r12) + (req.body.m1k12 * 1)) +
     (getRank(req.body.m2r12) + (req.body.m2k12 * 1)) +
-    (getRank(req.body.m3r12) + (req.body.m3k12 * 1))
+    (getRank(req.body.m3r12) + (req.body.m3k12 * 1)) +
+    (getRank(req.body.m4r12) + (req.body.m4k12 * 1)) +
+    (getRank(req.body.m5r12) + (req.body.m5k12 * 1))
 
     function getRank (rank) {
         if(rank == 1){
@@ -331,12 +403,6 @@ app.post('/ff-edit', (req, res) => {
         }
         else if(rank == 10){
             return 1
-        }
-        else if(rank == 11){
-            return 0
-        }
-        else if(rank == 12){
-            return 0
         }
         else{
             return 0
@@ -381,6 +447,10 @@ app.post('/ff-edit', (req, res) => {
                     m2k: req.body.m2k1,
                     m3r: req.body.m3r1,
                     m3k: req.body.m3k1,
+                    m4r: req.body.m3r1,
+                    m4k: req.body.m3k1,
+                    m5r: req.body.m3r1,
+                    m5k: req.body.m3k1,
                     total: total1,
                     rank: rank1,
                 },
@@ -392,6 +462,10 @@ app.post('/ff-edit', (req, res) => {
                     m2k: req.body.m2k2,
                     m3r: req.body.m3r2,
                     m3k: req.body.m3k2,
+                    m4r: req.body.m3r2,
+                    m4k: req.body.m3k2,
+                    m5r: req.body.m3r2,
+                    m5k: req.body.m3k2,
                     total: total2,
                     rank: rank2,
                 },
@@ -403,6 +477,10 @@ app.post('/ff-edit', (req, res) => {
                     m2k: req.body.m2k3,
                     m3r: req.body.m3r3,
                     m3k: req.body.m3k3,
+                    m4r: req.body.m3r3,
+                    m4k: req.body.m3k3,
+                    m5r: req.body.m3r3,
+                    m5k: req.body.m3k3,
                     total: total3,
                     rank: rank3,
                 },
@@ -414,6 +492,10 @@ app.post('/ff-edit', (req, res) => {
                     m2k: req.body.m2k4,
                     m3r: req.body.m3r4,
                     m3k: req.body.m3k4,
+                    m4r: req.body.m3r4,
+                    m4k: req.body.m3k4,
+                    m5r: req.body.m3r4,
+                    m5k: req.body.m3k4,
                     total: total4,
                     rank: rank4,
                 },
@@ -425,6 +507,10 @@ app.post('/ff-edit', (req, res) => {
                     m2k: req.body.m2k5,
                     m3r: req.body.m3r5,
                     m3k: req.body.m3k5,
+                    m4r: req.body.m3r5,
+                    m4k: req.body.m3k5,
+                    m5r: req.body.m3r5,
+                    m5k: req.body.m3k5,
                     total: total5,
                     rank: rank5,
                 },
@@ -436,6 +522,10 @@ app.post('/ff-edit', (req, res) => {
                     m2k: req.body.m2k6,
                     m3r: req.body.m3r6,
                     m3k: req.body.m3k6,
+                    m4r: req.body.m3r6,
+                    m4k: req.body.m3k6,
+                    m5r: req.body.m3r6,
+                    m5k: req.body.m3k6,
                     total: total6,
                     rank: rank6,
                 },
@@ -447,6 +537,10 @@ app.post('/ff-edit', (req, res) => {
                     m2k: req.body.m2k7,
                     m3r: req.body.m3r7,
                     m3k: req.body.m3k7,
+                    m4r: req.body.m3r7,
+                    m4k: req.body.m3k7,
+                    m5r: req.body.m3r7,
+                    m5k: req.body.m3k7,
                     total: total7,
                     rank: rank7,
                 },
@@ -458,6 +552,10 @@ app.post('/ff-edit', (req, res) => {
                     m2k: req.body.m2k8,
                     m3r: req.body.m3r8,
                     m3k: req.body.m3k8,
+                    m4r: req.body.m3r8,
+                    m4k: req.body.m3k8,
+                    m5r: req.body.m3r8,
+                    m5k: req.body.m3k8,
                     total: total8,
                     rank: rank8,
                 },
@@ -469,6 +567,10 @@ app.post('/ff-edit', (req, res) => {
                     m2k: req.body.m2k9,
                     m3r: req.body.m3r9,
                     m3k: req.body.m3k9,
+                    m4r: req.body.m3r9,
+                    m4k: req.body.m3k9,
+                    m5r: req.body.m3r9,
+                    m5k: req.body.m3k9,
                     total: total9,
                     rank: rank9,
                 },
@@ -480,6 +582,10 @@ app.post('/ff-edit', (req, res) => {
                     m2k: req.body.m2k10,
                     m3r: req.body.m3r10,
                     m3k: req.body.m3k10,
+                    m4r: req.body.m3r10,
+                    m4k: req.body.m3k10,
+                    m5r: req.body.m3r10,
+                    m5k: req.body.m3k10,
                     total: total10,
                     rank: rank10,
                 },
@@ -491,6 +597,10 @@ app.post('/ff-edit', (req, res) => {
                     m2k: req.body.m2k11,
                     m3r: req.body.m3r11,
                     m3k: req.body.m3k11,
+                    m4r: req.body.m3r11,
+                    m4k: req.body.m3k11,
+                    m5r: req.body.m3r11,
+                    m5k: req.body.m3k11,
                     total: total11,
                     rank: rank11,
                 },
@@ -502,6 +612,10 @@ app.post('/ff-edit', (req, res) => {
                     m2k: req.body.m2k12,
                     m3r: req.body.m3r12,
                     m3k: req.body.m3k12,
+                    m4r: req.body.m3r12,
+                    m4k: req.body.m3k12,
+                    m5r: req.body.m3r12,
+                    m5k: req.body.m3k12,
                     total: total12,
                     rank: rank12,
                 },
