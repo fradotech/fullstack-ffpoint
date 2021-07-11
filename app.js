@@ -39,7 +39,7 @@ app.get('/', (req, res) =>{
 app.get('/ff-register', (req, res) =>{
     res.render('ff-register', {
         layout: 'layouts/main-layout',
-        title: 'Fradotech',
+        title: 'Frandatech',
     })
 })
 
@@ -245,7 +245,7 @@ app.post('/ff-register', (req, res) => {
 app.get('/ff-login', (req, res) =>{
     res.render('ff-login', {
         layout: 'layouts/main-layout',
-        title: 'Fradotech',
+        title: 'Frandatech',
     })
 })
 
@@ -259,12 +259,12 @@ app.post('/ff-form', async (req, res) =>{
     if(user == null){
         res.render('ff-login-gagal', {
             layout: 'layouts/main-layout',
-            title: 'Fradotech',
+            title: 'Frandatech',
         })
     }else{
         res.render('ff-form', {
             layout: 'layouts/main-layout',
-            title: 'Fradotech',
+            title: 'Frandatech',
             user,
         })
     }
@@ -627,7 +627,7 @@ app.post('/ff-edit', (req, res) => {
 
                 res.render('ff-form', {
                     layout: 'layouts/main-layout',
-                    title: 'Fradotech',
+                    title: 'Frandatech',
                     user,
                 })
             }
@@ -645,7 +645,7 @@ app.get('/ff-hasil/:_id', async (req, res) =>{
 
     res.render('ff-hasil', {
         layout: 'layouts/main-layout',
-        title: 'Fradotech',
+        title: 'Frandatech',
         user,
     })
 })
@@ -655,7 +655,7 @@ app.get('/ff-hasil/:_id', async (req, res) =>{
 app.get('/pubg-register', (req, res) =>{
     res.render('pubg-register', {
         layout: 'layouts/main-layout',
-        title: 'Fradotech',
+        title: 'Frandatech',
     })
 })
 
@@ -1056,7 +1056,7 @@ app.post('/pubg-register', (req, res) => {
 app.get('/pubg-login', (req, res) =>{
     res.render('pubg-login', {
         layout: 'layouts/main-layout',
-        title: 'Fradotech',
+        title: 'Frandatech',
     })
 })
 
@@ -1070,12 +1070,12 @@ app.post('/pubg-form', async (req, res) =>{
     if(user == null){
         res.render('pubg-login-gagal', {
             layout: 'layouts/main-layout',
-            title: 'Fradotech',
+            title: 'Frandatech',
         })
     }else{
         res.render('pubg-form', {
             layout: 'layouts/main-layout',
-            title: 'Fradotech',
+            title: 'Frandatech',
             user,
         })
     }
@@ -1749,7 +1749,7 @@ app.post('/pubg-edit', (req, res) => {
 
                 res.render('pubg-form', {
                     layout: 'layouts/main-layout',
-                    title: 'Fradotech',
+                    title: 'Frandatech',
                     user,
                 })
             }
@@ -1767,7 +1767,7 @@ app.get('/pubg-hasil/:_id', async (req, res) =>{
 
     res.render('pubg-hasil', {
         layout: 'layouts/main-layout',
-        title: 'Fradotech',
+        title: 'Frandatech',
         user,
     })
 })
